@@ -1,4 +1,4 @@
-FROM tomcat:8-jre8
+FROM 500132197067.dkr.ecr.ap-south-1.amazonaws.com/demo-repo:latest
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
