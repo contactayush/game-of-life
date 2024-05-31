@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn clean install
+artifacts:
+  files:
+    - target/*.war
+  discard-paths: yes
+  base-directory: target
+  name: game-of-life.war
+artifacts:
+  files:
+    - game-of-life.war
+  discard-paths: yes
